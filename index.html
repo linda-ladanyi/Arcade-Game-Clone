@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Linda's Arcade Game: The Shopping Trip!</title>
+    <meta name="Reach the shops" content="game">
+    <link rel="stylesheet prefetch" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="modalstart">
+            <div class="modal-content">
+                <div class="modalstart-header">
+                    <h2>Welcome to<br>Linda's Arcade Game!</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Use the <i class="fa fa-arrow-up"></i>, <i class="fa fa-arrow-down"></i>, <i class="fa fa-arrow-left"></i>, <i class="fa fa-arrow-right"></i> arrow keys to move.<br>
+                    Buy gifts by reaching the shops, but look out for cars <i class="fa fa-car"></i>!<br>
+                    If you get hit, you'll get hurt, and loose a day.<br>
+                    <b>Start shopping by selecting an avatar!</b></p>
+                </div>                
+                <div class="modalstart-footer">
+                    <img src="img/char-boy.png" onclick="setAvatarBo()">
+                    <img src="img/char-cat-girl.png" onclick="setAvatarCg()">
+                    <img src="img/char-horn-girl.png" onclick="setAvatarHg()">
+                    <img src="img/char-pink-girl.png" onclick="setAvatarPg()">
+                    <img src="img/char-princess-girl.png" onclick="setAvatarPr()">
+                </div>
+            </div>
+        </div>
+        <div class="modalend">
+            <div class="modal-content">
+                <div class="modalend-header">
+                    <h2>Congratulations<br>... but you have run out of time!</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Your shopping trip is over<br>You got <span class="endscore"> </span> gift(s) <i class="fa fa-gift"></i>!</p>
+                </div>
+                <div class="modalend-footer">
+                    <h3>Click here to prepare for the next party<br>CONTINUE SHOPPING!</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
